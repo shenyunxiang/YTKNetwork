@@ -7,6 +7,7 @@
 //
 
 #import "UploadImageApi.h"
+#import "AFNetworking.h"
 
 @implementation UploadImageApi {
     UIImage *_image;
@@ -21,7 +22,7 @@
 }
 
 - (YTKRequestMethod)requestMethod {
-    return YTKRequestMethodPost;
+    return YTKRequestMethodPOST;
 }
 
 - (NSString *)requestUrl {
